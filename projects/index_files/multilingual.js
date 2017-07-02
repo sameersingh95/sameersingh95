@@ -1,0 +1,2 @@
+"use strict";define("multilingual",["lodash"],function(n){var t=null,a=null,u={setCurrentLanguage:function(n){t=n},getCurrentLanguage:function(){return t},setOriginalLanguage:function(n){a=n},getOriginalLanguage:function(){return a},getTranslationPath:function(t,a){var e=u.getCurrentLanguage();return u.getOriginalLanguage()===e||n.isNull(e)?t:n.concat(n.take(t,a),"translations",e,n.drop(t,a))}};return u});
+//# sourceMappingURL=multilingual.min.js.map
